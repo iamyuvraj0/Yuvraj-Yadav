@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Yuvraj Yadav</title>
+</head>
+
+<body>
+  
+
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <input type="text" placeholder="Search..">
+    <button type="button" class="btn btn-primary"></button>
+    <img class="logo" src="logo.jpg" alt="logo">
+  </div>
+
+
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+
+
+  <section class="showcase-area" id="showcase">
+    <div class="showcase-container">
+      <h1 class="main-title" id="home">I'm Yuvraj Yadav</h1>
+      <p>I'm a newbie to web Development</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-wrapper container">
+      <div class="about-text">
+        <p class="small"></p>
+        <h2>I"ve been learning Web Development from past 1 years</h2>
+        <p>
+          Learning web development can be a challenging but rewarding process. It involves acquiring knowledge in
+          various areas such as HTML, CSS, JavaScript, and other web development frameworks. It requires both technical
+          skills and creativity to design and develop websites that are functional and aesthetically pleasing. Learning
+          web development can open up a world of opportunities, including freelance work, entrepreneurship, and career
+          advancement in the technology industry. With dedication, practice, and a willingness to learn, anyone can
+          acquire the skills needed to become proficient in web development.
+        </p>
+      </div>
+      <div class="about-img">
+        <img src="about.jpg" alt="food" />
+      </div>
+    </div>
+  </section>
+  <section id="food">
+    <h2>Three basic web development languages</h2>
+    <div class="food-container container">
+      <div class="food-type fruite">
+        <div class="img-container">
+          <img src="html.png" alt="error" />
+          <div class="img-content">
+            <h3>html</h3>
+            <a href="https://en.wikipedia.org/wiki/HTML" class="btn btn-primary" target="blank">learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="food-type vegetable">
+        <div class="img-container">
+          <img src="java.jpg" alt="error" />
+          <div class="img-content">
+            <h3>Java</h3>
+            <a href="https://en.wikipedia.org/wiki/JavaScript" class="btn btn-primary" target="blank">learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="food-type grin">
+        <div class="img-container">
+          <img src="css.png" alt="error" />
+          <div class="img-content">
+            <h3>css</h3>
+            <a href="https://en.wikipedia.org/wiki/CSS" class="btn btn-primary" target="blank">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer id="footer">
+    <h2>Yuavraj | <a href="index.html" href="www.yuvrajyadav.com.np">www.yuvraj.com.np</a> &copy; all rights reserved
+    </h2>
+  </footer>
+</body>
+<!-- 
+      .................../ JS Code for smooth scrolling /...................... -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    // Add smooth scrolling to all links
+    $("a").on("click", function (event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $("html, body").animate(
+          {
+            scrollTop: $(hash).offset().top,
+          },
+          800,
+          function () {
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          }
+        );
+      } // End if
+    });
+  });
+</script>
+
+
+</body>
+
+</html>
